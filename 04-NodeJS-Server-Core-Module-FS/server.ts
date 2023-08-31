@@ -11,6 +11,16 @@ const server: Server = http.createServer(
     response.setHeader("Content-Type", "text/html");
 
     // FS MODULE
+    fs.readFile(
+      path.join(__dirname, "data", "note.txt"),
+      "utf-8",
+      (error, result) => {
+        if (error) {
+          console.log(error);
+        }
+        response.end(`<pre>${result}</pre>`);
+      }
+    );
 
     // response.end(
     //   `<h3 style = "font-family: lato, sans-serif; color: green">Wenn Works</h3>`
