@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/colors": "^1.2.1",
     "@types/cors": "^2.8.13",
     "@types/dotenv": "^8.2.0",
@@ -19,6 +20,7 @@
     "@types/morgan": "^1.9.5",
     "@types/node": "^20.5.7",
     "@types/nodemon": "^1.19.2",
+    "bcrypt": "^5.1.1",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
