@@ -15,3 +15,5 @@ how to run a ts program
 2. ts-node app.ts
 3. nodemon app.ts (server)
 4. npm start
+
+

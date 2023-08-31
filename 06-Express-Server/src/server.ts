@@ -1,5 +1,6 @@
 import express from "express";
 import colors from "colors";
+import morgan from "morgan";
 import apiRoutes from "./router/apiRoutes";
 import userRoutes from "./router/userRoute";
 
@@ -12,6 +13,7 @@ const app: express.Application = express();
 
 // MIDDLEWARE
 app.use(express.json());
+app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 
 // GET METHOD
