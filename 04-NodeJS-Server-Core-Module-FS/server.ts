@@ -18,6 +18,18 @@ const server: Server = http.createServer(
         if (error) {
           console.log(error);
         }
+        // writing file
+        fs.writeFile(
+          path.join(__dirname, "data", "note.txt"),
+          result,
+          "utf-8",
+          (err) => {
+            if (error) {
+              console.log(error);
+            }
+          }
+        );
+        // response.end(`<pre>Data is written to a file</pre>`);
         response.end(`<pre>${result}</pre>`);
       }
     );
