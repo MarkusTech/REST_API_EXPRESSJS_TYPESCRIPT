@@ -2,7 +2,7 @@ let courseName: string = "Backend web development";
 console.log(courseName);
 
 const printNumber = (start: number, end: number): void => {
-  let temp: string = "";
+  let temp: string = " ";
   if (start < end) {
     for (let i: number = start; i <= end; i++) {
       temp += `${i}`;
@@ -13,4 +13,4 @@ const printNumber = (start: number, end: number): void => {
   }
 };
 
-printNumber(5, 10);
+printNumber(5, 100);
