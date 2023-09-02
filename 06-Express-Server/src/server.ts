@@ -3,6 +3,7 @@ import colors from "colors";
 import morgan from "morgan";
 import apiRoutes from "./router/apiRoutes";
 import userRoutes from "./router/userRoute";
+import loginRoute from "./router/login.Route";
 
 const port: number = 5000;
 const host: string = "localhost";
@@ -24,6 +25,7 @@ app.get("/", (req: express.Request, res: express.Response) => {
 // API ROUTES
 app.use("/api/v1", apiRoutes);
 app.use("/api/user", userRoutes);
+app.use("/api/login", loginRoute);
 
 app.listen(port, () => {
   console.log(`Server is running on http://${host}:${port}`.bgCyan);
